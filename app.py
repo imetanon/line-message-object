@@ -267,7 +267,7 @@ def get_flex_message():
                                                 "size": "sm",
                                                 "color": "#666666",
                                                 "flex": 5,
-                                                "wrap": true,
+                                                "wrap": True,
                                                 "contents": []
                                             }
                                         ]
@@ -291,7 +291,7 @@ def get_flex_message():
                                                 "size": "sm",
                                                 "color": "#666666",
                                                 "flex": 5,
-                                                "wrap": true,
+                                                "wrap": True,
                                                 "contents": []
                                             }
                                         ]
