@@ -170,7 +170,7 @@ def get_image_carousel_template():
 
 
 @app.route('/flex-message')
-def get_image_carousel_template():
+def get_flex_message():
     data = {
         "line_payload": [
             {
