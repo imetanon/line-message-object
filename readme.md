@@ -8,11 +8,24 @@
 **สำหรับท่านที่ไม่ใช่ Developers** และต้องการใช้งานทันทีสามารถเรียกใช้ในลักษณะ APIs โดยแบ่งตาม Objects ได้ดังนี้ (ไม่ต้องส่งค่า parameter ใดเรียกใช้ได้เลย)
 - ##### **Buttons template**
 URL: https://line-message-object.herokuapp.com/buttons-template
+
+	![](https://i.imgur.com/WiTBibE.jpg)
 - ##### **Confirm-template**
 URL: https://line-message-object.herokuapp.com/confirm-template
+
+	![](https://i.imgur.com/GAL52hU.jpeg)
 - ##### **Carousel-template**
 URL: https://line-message-object.herokuapp.com/carousel-template
+
+	![](https://i.imgur.com/ujEoywU.jpg)
 - ##### **Image-carousel-template**
 URL: https://line-message-object.herokuapp.com/image-carousel-template
+
+	![](https://i.imgur.com/vkRIiDN.jpg)
 - ##### **Flex-message**
 URL: https://line-message-object.herokuapp.com/flex-message
+
+	![](https://i.imgur.com/5UofsaI.jpeg)
+
+## สำหรับสาย Developers
+สามารถ Clone Project ไปลองใช้งานได้เลยครับ (ในรายละเอียดเพิ่มเติมจะอธิบายในภายหลัง)
