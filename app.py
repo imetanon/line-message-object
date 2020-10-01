@@ -11,7 +11,7 @@ def index():
 
 
 @app.route('/buttons-template')
-def get_buttons_template:
+def get_buttons_template():
     data = {
         "line_payload": [
             {
