@@ -333,9 +333,7 @@ def get_image_carousel_template():
                         ]
                     }
                 }
-
             }
-
         ]
     }
 
