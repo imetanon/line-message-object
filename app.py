@@ -77,5 +77,59 @@ def get_confirm_template():
     return resp
 
 
+@app.route('/carousel-template')
+def get_carousel_template():
+    data = {
+        "line_payload": [
+            {
+                "type": "template",
+                "altText": "this is a carousel template",
+                "template": {
+                    "type": "carousel",
+                    "columns": [
+                        {
+                            "title": "Title",
+                            "text": "Text",
+                            "actions": [
+                                {
+                                    "type": "message",
+                                    "label": "Action 1",
+                                    "text": "Action 1"
+                                },
+                                {
+                                    "type": "message",
+                                    "label": "Action 2",
+                                    "text": "Action 2"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Title",
+                            "text": "Text",
+                            "actions": [
+                                {
+                                    "type": "message",
+                                    "label": "Action 1",
+                                    "text": "Action 1"
+                                },
+                                {
+                                    "type": "message",
+                                    "label": "Action 2",
+                                    "text": "Action 2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+
+    js = json.dumps(data)
+    resp = Response(js, status=200, mimetype='application/json')
+    resp.headers['reply-by-object'] = True
+    return resp
+
+
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)
