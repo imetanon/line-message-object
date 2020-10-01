@@ -131,5 +131,43 @@ def get_carousel_template():
     return resp
 
 
+@app.route('/image-carousel-template')
+def get_image_carousel_template():
+    data = {
+        "line_payload": [
+            {
+                "type": "template",
+                "altText": "this is an image carousel template",
+                "template": {
+                    "type": "image_carousel",
+                    "columns": [
+                        {
+                            "imageUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip10.jpg",
+                            "action": {
+                                "type": "message",
+                                "label": "Action 1",
+                                "text": "Action 1"
+                            }
+                        },
+                        {
+                            "imageUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip11.jpg",
+                            "action": {
+                                "type": "message",
+                                "label": "Action 2",
+                                "text": "Action 2"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+
+    js = json.dumps(data)
+    resp = Response(js, status=200, mimetype='application/json')
+    resp.headers['reply-by-object'] = True
+    return resp
+
+
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)
