@@ -347,8 +347,9 @@ def get_sticker():
     data = {
         "line_payload": [
             {
-                "type": "text",
-                "text": "hello, world!"
+                "type": "sticker",
+                "packageId": "11537",
+                "stickerId": "52002734"
             }
         ]
     }
