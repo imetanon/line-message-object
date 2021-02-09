@@ -40,7 +40,7 @@ def get_buttons_template():
 
     js = json.dumps(data)
     resp = Response(js, status=200, mimetype='application/json')
-    resp.headers['reply-by-object'] = True
+    resp.headers['Response-Type'] = "object"
     return resp
 
 
@@ -73,7 +73,7 @@ def get_confirm_template():
 
     js = json.dumps(data)
     resp = Response(js, status=200, mimetype='application/json')
-    resp.headers['reply-by-object'] = True
+    resp.headers['Response-Type'] = "object"
     return resp
 
 
@@ -127,7 +127,7 @@ def get_carousel_template():
 
     js = json.dumps(data)
     resp = Response(js, status=200, mimetype='application/json')
-    resp.headers['reply-by-object'] = True
+    resp.headers['Response-Type'] = "object"
     return resp
 
 
@@ -165,7 +165,7 @@ def get_image_carousel_template():
 
     js = json.dumps(data)
     resp = Response(js, status=200, mimetype='application/json')
-    resp.headers['reply-by-object'] = True
+    resp.headers['Response-Type'] = "object"
     return resp
 
 
@@ -339,7 +339,7 @@ def get_flex_message():
 
     js = json.dumps(data)
     resp = Response(js, status=200, mimetype='application/json')
-    resp.headers['reply-by-object'] = True
+    resp.headers['Response-Type'] = "object"
     return resp
 
 @app.route('/sticker')
