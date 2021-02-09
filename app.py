@@ -342,6 +342,27 @@ def get_flex_message():
     resp.headers['reply-by-object'] = True
     return resp
 
+@app.route('/sticker')
+def get_sticker():
+    data = {
+        "line_payload": [
+            {
+                "type": "text"
+                "text": "hello, world!"
+            },
+            {
+                "type": "sticker",
+                "packageId": "11537",
+                "stickerId": "52002734"
+            }
+        ]
+    }
+
+    js = json.dumps(data)
+    resp = Response(js, status=200, mimetype='application/json')
+    resp.headers['Response-Type'] = "object"
+    return resp
+
 
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)
