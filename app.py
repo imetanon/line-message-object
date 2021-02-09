@@ -349,11 +349,6 @@ def get_sticker():
             {
                 "type": "text",
                 "text": "hello, world!"
-            },
-            {
-                "type": "sticker",
-                "packageId": "11537",
-                "stickerId": "52002734"
             }
         ]
     }
